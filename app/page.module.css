@@ -1,0 +1,95 @@
+.mainContainer {
+  width: 100%;
+  height: 763px;
+  padding: 24px 104px;
+  background-image: url("../public/home_hero.jpg");
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerNav {
+  display: flex;
+  gap: 56px;
+}
+
+.navLink {
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+}
+
+.heroSection {
+  display: flex;
+  flex-direction: row;
+  gap: 281px;
+  margin-top: 72px;
+}
+
+.titleContainer {
+  width: 646px;
+}
+
+.title {
+  font-size: 98px;
+  color: white;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.titleSpan {
+  font-weight: 500;
+}
+
+.places {
+  display: flex;
+  margin-top: 148px;
+  font-size: 16px;
+  color: white;
+  font-weight: 200;
+}
+
+.secondTitle {
+  font-size: 98px;
+  color: white;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.titleText {
+  font-size: 16px;
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 36px;
+}
+
+.text {
+  display: flex;
+  width: 294px;
+  height: 120px;
+  margin-top: 181px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 24px;
+  color: white;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 293px;
+  height: 71px;
+  margin-top: 44px;
+  background-color: rgba(255, 255, 255, 5%);
+  border: 0px solid;
+  color: white;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
