@@ -243,7 +243,7 @@ const Services = () => {
                 >
                   Fly in the sky over the Carpathians! Experienced instructors
                   will help you realize your dream of free flight. Remember the
-                  incredible emotions and panoramas from a bird's eye view
+                  incredible emotions and panoramas from a bird&apos;s eye view
                   forever.
                 </p>
               </div>
