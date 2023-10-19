@@ -1,3 +1,7 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 * {
   margin: 0;
   padding: 0;
@@ -6,4 +10,12 @@
 
 body {
   font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 98px;
+}
+
+.custom-size {
+  padding: 104px;
 }

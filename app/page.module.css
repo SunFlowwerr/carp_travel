@@ -23,18 +23,26 @@
   text-decoration: none;
 }
 
+.navLink:hover,
+.navLink:focus {
+  text-decoration: underline;
+}
+
 .heroSection {
   display: flex;
   flex-direction: row;
   gap: 281px;
-  margin-top: 72px;
+  padding: 24px;
+  margin-top: 26px;
 }
 
 .titleContainer {
   width: 646px;
+  height: 357px;
 }
 
 .title {
+  line-height: 1.5;
   font-size: 98px;
   color: white;
   font-weight: 100;
@@ -85,11 +93,17 @@
   justify-content: space-between;
   width: 293px;
   height: 71px;
-  margin-top: 44px;
+  margin-top: 28px;
   background-color: rgba(255, 255, 255, 5%);
   border: 0px solid;
   color: white;
   font-size: 32px;
   text-transform: uppercase;
   font-weight: 700;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: rgba(255, 255, 255, 10%);
 }
