@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { Link } from "react-scroll";
-import NavbarModal from "./NavbarModal";
 import "../app/globals.css";
 
 const Navbar = () => {
