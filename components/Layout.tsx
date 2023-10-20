@@ -4,14 +4,21 @@ import "../app/globals.css";
 interface LayoutProps {
   children: ReactNode;
   background: string;
-  height: number;
+  id: string;
 }
 
-const Layout: React.FC<LayoutProps> = ({ children, background, height }) => {
+const Layout: React.FC<LayoutProps> = ({ children, background, id }) => {
+  const className = `w-full h-auto px-[20px] py-[56px] relative md:px-[32px] md:py-[64px] md:static xl:px-[104px] xl:py-[104px]`;
   return (
     <div
-      className="w-full h-full p-20 relative"
-      style={{ backgroundImage: `url(${background})`, height: `${height}` }}
+      className={className}
+      style={{
+        backgroundImage: `url(${background})`,
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "top left",
+      }}
+      id={id}
     >
       {children}
     </div>

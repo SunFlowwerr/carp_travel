@@ -45,12 +45,8 @@ const Services = () => {
         className="max-w-full flex flex-row "
         style={{ display: "flex" }}
       >
-        <Layout background="/services.jpg" height={779}>
-          <section
-            id="services-section"
-            className="p-6 flex flex-col relative"
-            style={{ height: 619 }}
-          >
+        <Layout background="/services.jpg" id="services-section">
+          <section className="flex flex-col relative" style={{ height: 619 }}>
             <div className="flex flex-row" style={{ gap: 162 }}>
               <h1 className="leading-tight font-thin text-white uppercase tracking-tighter mb-6">
                 We <span className="font-medium uppercase">offer</span>
@@ -98,12 +94,11 @@ const Services = () => {
         className="max-w-full flex flex-row "
         style={{ display: "flex" }}
       >
-        <Layout background="/bg-services-rock-climbing.jpg" height={779}>
-          <section
-            id="services-section"
-            className="p-6 flex flex-col relative"
-            style={{ height: 619 }}
-          >
+        <Layout
+          background="/bg-services-rock-climbing.jpg"
+          id="services-section"
+        >
+          <section className="flex flex-col relative" style={{ height: 619 }}>
             <div className="flex flex-row" style={{ gap: 162 }}>
               <h1 className="leading-tight font-thin text-white uppercase tracking-tighter mb-6">
                 We <span className="font-medium uppercase">offer</span>
@@ -149,12 +144,8 @@ const Services = () => {
         </Layout>
       </SwiperSlide>
       <SwiperSlide>
-        <Layout background="/bg-services-ballooning.jpg" height={779}>
-          <section
-            id="services-section"
-            className="p-6 flex flex-col relative"
-            style={{ height: 619 }}
-          >
+        <Layout background="/bg-services-ballooning.jpg" id="services-section">
+          <section className="flex flex-col relative" style={{ height: 619 }}>
             <div className="flex flex-row" style={{ gap: 162 }}>
               <h1 className="leading-tight font-thin text-white uppercase tracking-tighter mb-6">
                 We <span className="font-medium uppercase">offer</span>
@@ -200,12 +191,8 @@ const Services = () => {
         </Layout>
       </SwiperSlide>
       <SwiperSlide>
-        <Layout background="/bg-services-skydiving.jpg" height={779}>
-          <section
-            id="services-section"
-            className="p-6 flex flex-col relative"
-            style={{ height: 619 }}
-          >
+        <Layout background="/bg-services-skydiving.jpg" id="services-section">
+          <section className="flex flex-col relative" style={{ height: 619 }}>
             <div className="flex flex-row" style={{ gap: 162 }}>
               <h1 className="leading-tight font-thin text-white uppercase tracking-tighter mb-6">
                 We <span className="font-medium uppercase">offer</span>
@@ -252,12 +239,8 @@ const Services = () => {
         </Layout>
       </SwiperSlide>
       <SwiperSlide>
-        <Layout background="/bg-services-rafting.jpg" height={779}>
-          <section
-            id="services-section"
-            className="p-6 flex flex-col relative"
-            style={{ height: 619 }}
-          >
+        <Layout background="/bg-services-rafting.jpg" id="services-section">
+          <section className="flex flex-col relative" style={{ height: 619 }}>
             <div className="flex flex-row" style={{ gap: 162 }}>
               <h1 className="leading-tight font-thin text-white uppercase tracking-tighter mb-6">
                 We <span className="font-medium uppercase">offer</span>
