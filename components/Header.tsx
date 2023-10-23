@@ -51,7 +51,7 @@ const Header = () => {
             Menu
           </button>
           {isNavbarModalOpen && (
-            <div className="w-full h-[653px] bg-black bg-opacity-75 backdrop-blur-sm absolute top-0 left-0 flex items-center justify-center transition-all">
+            <div className="w-full h-screen bg-black bg-opacity-75 backdrop-blur-sm absolute top-0 left-0 flex items-center justify-center transition-all z-10">
               <button
                 onClick={closeNavbarModal}
                 className="text-sm text-white hover:underline focus:underline cursor-pointer uppercase absolute top-[43px] right-[20px]"
@@ -65,6 +65,7 @@ const Header = () => {
                   spy={true}
                   smooth={true}
                   duration={500}
+                  onClick={closeNavbarModal}
                   className="text-[18px] text-white hover:underline focus:underline cursor-pointer"
                 >
                   About
@@ -75,6 +76,7 @@ const Header = () => {
                   spy={true}
                   smooth={true}
                   duration={500}
+                  onClick={closeNavbarModal}
                   className="text-[18px] text-white hover:underline focus:underline cursor-pointer"
                 >
                   Services
@@ -85,6 +87,7 @@ const Header = () => {
                   spy={true}
                   smooth={true}
                   duration={500}
+                  onClick={closeNavbarModal}
                   className="text-[18px] text-white hover:underline focus:underline cursor-pointer"
                 >
                   Career
@@ -95,6 +98,7 @@ const Header = () => {
                   spy={true}
                   smooth={true}
                   duration={500}
+                  onClick={closeNavbarModal}
                   className="text-[18px] text-white hover:underline focus:underline cursor-pointer"
                 >
                   Gallery
@@ -105,6 +109,7 @@ const Header = () => {
                   spy={true}
                   smooth={true}
                   duration={500}
+                  onClick={closeNavbarModal}
                   className="text-[18px] text-white hover:underline focus:underline cursor-pointer"
                 >
                   Contacts
