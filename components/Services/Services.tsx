@@ -1,12 +1,12 @@
 "use client";
-import Layout from "./Layout";
+import Layout from "../Layout";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import { EffectFade, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
-import "./custom-swiper-styles.css";
+import "./services-swiper-styles.css";
 
 const Services = () => {
   const pagination = {

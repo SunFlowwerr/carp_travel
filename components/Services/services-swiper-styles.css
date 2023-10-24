@@ -36,7 +36,8 @@ swiper-horizontal > .swiper-pagination-bullets,
   display: flex;
   flex-direction: column;
   gap: 35px;
-  top: 55%;
+  /* top: 60%; */
+  bottom: 210px;
   left: 20px;
 }
 

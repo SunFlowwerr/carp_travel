@@ -1,9 +1,13 @@
+"use client";
 import css from "./page.module.css";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Layout from "@/components/Layout";
 import About from "@/components/About";
-import Services from "@/components/Services";
+import Services from "@/components/Services/Services";
+import OurGallery from "@/components/OurGallery";
+import ContactUs from "@/components/ContactUs";
+import { Link } from "react-scroll";
 import "./globals.css";
 
 const Home = () => {
@@ -39,7 +43,14 @@ const Home = () => {
               the Carpathians. Enjoy stunning views, exciting expeditions, and
               the best service!
             </p>
-            <button className="flex items-center justify-between w-[280px] h-[53px] mt-[28px] uppercase text-white font-bold cursor-pointer bg-white bg-opacity-5 hover:bg-opacity-10 focus:bg-opacity-10 md:w-[230px] md:h-[50px] text-[18px] xl:w-[293px] xl:h-[71px] xl:text-[32px]">
+            <Link
+              activeClass="active"
+              to="contact-section"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="flex items-center justify-between w-[280px] h-[53px] mt-[28px] uppercase text-white font-bold cursor-pointer bg-white bg-opacity-5 hover:bg-opacity-10 focus:bg-opacity-10 md:w-[230px] md:h-[50px] text-[18px] xl:w-[293px] xl:h-[71px] xl:text-[32px]"
+            >
               <Image
                 src="/button_left.svg"
                 alt="Button left"
@@ -57,7 +68,7 @@ const Home = () => {
                 height={71}
                 priority
               />
-            </button>
+            </Link>
           </div>
         </section>
       </Layout>
@@ -65,6 +76,12 @@ const Home = () => {
         <About></About>
       </Layout>
       <Services></Services>
+      {/* <Layout background="/gallery.jpg" id="gallery-section">
+        <OurGallery></OurGallery>
+      </Layout> */}
+      <Layout background="/contact.jpg" id="contact-section">
+        <ContactUs></ContactUs>
+      </Layout>
     </div>
   );
 };

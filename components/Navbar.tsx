@@ -38,7 +38,7 @@ const Navbar = () => {
       </Link>
       <Link
         activeClass="active"
-        to=""
+        to="gallery-section"
         spy={true}
         smooth={true}
         duration={500}
@@ -48,7 +48,7 @@ const Navbar = () => {
       </Link>
       <Link
         activeClass="active"
-        to=""
+        to="contact-section"
         spy={true}
         smooth={true}
         duration={500}
