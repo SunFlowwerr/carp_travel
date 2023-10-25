@@ -15,8 +15,8 @@ const Layout: React.FC<LayoutProps> = ({ children, background, id }) => {
       style={{
         backgroundImage: `url(${background})`,
         backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "top left",
+        backgroundRepeat: "repeat",
+        backgroundPosition: "center",
       }}
       id={id}
     >

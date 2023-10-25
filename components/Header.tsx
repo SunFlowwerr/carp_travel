@@ -83,7 +83,7 @@ const Header = () => {
                 </Link>
                 <Link
                   activeClass="active"
-                  to=""
+                  to="career-section"
                   spy={true}
                   smooth={true}
                   duration={500}
