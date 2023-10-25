@@ -10,8 +10,6 @@ import "./gallery-swiper.css";
 import React, { useRef } from "react";
 
 const Gallery = () => {
-  const isViewportWide = window.innerWidth >= 1280;
-
   const [windowWidth, setWindowWidth] = useState<number>(0);
 
   useEffect(() => {
@@ -66,19 +64,19 @@ const Gallery = () => {
             justifyContent: "space-between",
             alignItems: "center",
             width: "100%",
-            height: isViewportWide ? "429px" : "294px",
+            height: windowWidth >= 1280 ? "429px" : "294px",
           }}
         >
           <SwiperSlide
             style={{
-              width: isViewportWide ? "606px" : "415px",
+              width: windowWidth >= 1280 ? "429px" : "294px",
               height: "100%",
             }}
           >
             <Image
               src="/gallery-mountain.jpg"
               alt="Mountain"
-              style={{ width: isViewportWide ? "606px" : "415px" }}
+              style={{ width: windowWidth >= 1280 ? "606px" : "415px" }}
               width={606}
               height={429}
               priority
@@ -86,14 +84,14 @@ const Gallery = () => {
           </SwiperSlide>
           <SwiperSlide
             style={{
-              width: isViewportWide ? "606px" : "415px",
+              width: windowWidth >= 1280 ? "606px" : "415px",
               height: "100%",
             }}
           >
             <Image
               src="/gallery-lake.jpg"
               alt="Lake in mountains"
-              style={{ width: isViewportWide ? "606px" : "415px" }}
+              style={{ width: windowWidth >= 1280 ? "606px" : "415px" }}
               width={606}
               height={429}
               priority
@@ -101,14 +99,14 @@ const Gallery = () => {
           </SwiperSlide>
           <SwiperSlide
             style={{
-              width: isViewportWide ? "606px" : "415px",
+              width: windowWidth >= 1280 ? "606px" : "415px",
               height: "100%",
             }}
           >
             <Image
               src="/gallery-forest.jpg"
               alt="Forest in mountains"
-              style={{ width: isViewportWide ? "606px" : "415px" }}
+              style={{ width: windowWidth >= 1280 ? "606px" : "415px" }}
               width={606}
               height={429}
               priority
