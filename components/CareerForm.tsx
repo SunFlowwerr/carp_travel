@@ -105,7 +105,7 @@ const CareerForm = () => {
                       message: "Incorrect name",
                     },
                   })}
-                  className="bg-white bg-opacity-5 text-white text-[13px] xl:text-[20px] hover:bg-opacity-10 focus:bg-opacity-10 h-[24px] pl-[8px] pr-[8px] outline-none xl:h-[28px]"
+                  className="hover:transition-all focus:transition-all bg-white bg-opacity-5 text-white text-[13px] xl:text-[20px] hover:bg-opacity-10 focus:bg-opacity-10 h-[24px] pl-[8px] pr-[8px] outline-none xl:h-[28px]"
                   placeholder="John Smith"
                   pattern="/^[A-Za-z]+$/i"
                   onChange={onChangeName}
@@ -137,7 +137,7 @@ const CareerForm = () => {
                     },
                   })}
                   pattern="/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/"
-                  className="bg-white bg-opacity-5 text-white text-[13px] xl:text-[20px] hover:bg-opacity-10 focus:bg-opacity-10 h-[24px] pl-[8px] pr-[8px] outline-none xl:h-[28px]"
+                  className="hover:transition-all focus:transition-all bg-white bg-opacity-5 text-white text-[13px] xl:text-[20px] hover:bg-opacity-10 focus:bg-opacity-10 h-[24px] pl-[8px] pr-[8px] outline-none xl:h-[28px]"
                   placeholder="johnsmith@email.com"
                   onChange={onChangeEmail}
                 />
@@ -157,7 +157,7 @@ const CareerForm = () => {
               <label className="mb-[16px] flex flex-col gap-[4px] text-[12px] text-white font-extralight  mt-[4px] tracking-[3px] md:w-[221px] xl:mt-0 xl:w-full">
                 Position
                 <input
-                  className="bg-white bg-opacity-5 text-white text-[13px] xl:text-[20px] hover:bg-opacity-10 focus:bg-opacity-10 h-[24px] pl-[8px] pr-[8px] outline-none xl:h-[28px]"
+                  className="hover:transition-all focus:transition-all bg-white bg-opacity-5 text-white text-[13px] xl:text-[20px] hover:bg-opacity-10 focus:bg-opacity-10 h-[24px] pl-[8px] pr-[8px] outline-none xl:h-[28px]"
                   placeholder="Movie maker"
                 />
               </label>
@@ -174,7 +174,7 @@ const CareerForm = () => {
                       message: "Incorrect phone",
                     },
                   })}
-                  className="bg-white bg-opacity-5 text-white text-[13px] xl:text-[20px] hover:bg-opacity-10 focus:bg-opacity-10 h-[24px] pl-[8px] pr-[8px] outline-none xl:h-[28px]"
+                  className="hover:transition-all focus:transition-all bg-white bg-opacity-5 text-white text-[13px] xl:text-[20px] hover:bg-opacity-10 focus:bg-opacity-10 h-[24px] pl-[8px] pr-[8px] outline-none xl:h-[28px]"
                   placeholder="(097) 12 34 567"
                   pattern="/^[A-Za-z]+$/i"
                   onChange={onChangePhone}
@@ -196,7 +196,7 @@ const CareerForm = () => {
             <div className="flex flex-col w-full md:ml-[20px] xl:ml-0">
               <label className="flex flex-col gap-[4px] text-[12px] text-white font-extralight tracking-[3px] md:w-[221px] md:h-[228px] xl:w-[292px] xl:h-[268px]">
                 Message
-                <textarea className="bg-white bg-opacity-5 h-[193px] md:h-[228px] xl:text-[20px] w-full xl:h-[174px] hover:bg-opacity-10 focus:bg-opacity-10 resize-none outline-none p-[8px] xl:w-[292px] xl:h-[268px]"></textarea>
+                <textarea className="hover:transition-all focus:transition-all bg-white bg-opacity-5 h-[193px] md:h-[228px] xl:text-[20px] w-full xl:h-[174px] hover:bg-opacity-10 focus:bg-opacity-10 resize-none outline-none p-[8px] xl:w-[292px] xl:h-[268px]"></textarea>
               </label>
             </div>
           </div>
@@ -218,7 +218,7 @@ const CareerForm = () => {
                     width={22}
                     height={22}
                     priority
-                    className="absolute top-0 left-0"
+                    className="absolute top-0 left-0 cursor-pointer"
                   />
                 ) : (
                   <Image
@@ -227,7 +227,7 @@ const CareerForm = () => {
                     width={22}
                     height={22}
                     priority
-                    className="absolute top-0 left-0"
+                    className="absolute top-0 left-0 cursor-pointer"
                   />
                 )}
               </label>
@@ -235,7 +235,7 @@ const CareerForm = () => {
                 I confirm my consent to the processing of personal data.
               </p>
             </div>
-            <button className="text-[30px] font-medium text-white text-end uppercase mt-[16px] self-end md:mt-[9px] xl:text-[32px] md:absolute md:bottom-[27px] xl:bottom-[63px] xl:right-[10px]">
+            <button className="text-[30px] font-medium text-white text-end uppercase mt-[16px] self-end hover:opacity-5 focus:opacity-5 hover:transition-all focus:transition-all md:mt-[9px] xl:text-[32px] md:absolute md:bottom-[27px] xl:bottom-[63px] xl:right-[10px]">
               Send
             </button>
           </div>

@@ -12,7 +12,7 @@ const Navbar = () => {
         spy={true}
         smooth={true}
         duration={500}
-        className="text-sm text-white hover:underline focus:underline cursor-pointer"
+        className="hover:transition-all focus:transition-all text-sm text-white hover:underline focus:underline cursor-pointer"
       >
         About
       </Link>
@@ -22,7 +22,7 @@ const Navbar = () => {
         spy={true}
         smooth={true}
         duration={500}
-        className="text-sm text-white hover:underline focus:underline cursor-pointer"
+        className="hover:transition-all focus:transition-all text-sm text-white hover:underline focus:underline cursor-pointer"
       >
         Services
       </Link>
@@ -32,7 +32,7 @@ const Navbar = () => {
         spy={true}
         smooth={true}
         duration={500}
-        className="text-sm text-white hover:underline focus:underline cursor-pointer"
+        className="hover:transition-all focus:transition-all text-sm text-white hover:underline focus:underline cursor-pointer"
       >
         Career
       </Link>
@@ -42,7 +42,7 @@ const Navbar = () => {
         spy={true}
         smooth={true}
         duration={500}
-        className="text-sm text-white hover:underline focus:underline cursor-pointer"
+        className="hover:transition-all focus:transition-all text-sm text-white hover:underline focus:underline cursor-pointer"
       >
         Gallery
       </Link>
@@ -52,7 +52,7 @@ const Navbar = () => {
         spy={true}
         smooth={true}
         duration={500}
-        className="text-sm text-white hover:underline focus:underline cursor-pointer"
+        className="hover:transition-all focus:transition-all text-sm text-white hover:underline focus:underline cursor-pointer"
       >
         Contacts
       </Link>

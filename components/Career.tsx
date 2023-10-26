@@ -1,4 +1,4 @@
-import CareerMobile from "./CareerForm";
+import CareerForm from "./CareerForm";
 import { useEffect, useState } from "react";
 
 const Career = () => {
@@ -68,7 +68,7 @@ const Career = () => {
             </li>
           </ul>
         </div>
-        {windowWidth >= 768 && <CareerMobile></CareerMobile>}
+        {windowWidth >= 768 && <CareerForm></CareerForm>}
       </div>
     </section>
   );

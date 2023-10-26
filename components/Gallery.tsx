@@ -25,9 +25,6 @@ const Gallery = () => {
     };
   }, []);
 
-  const nextButtonRef = useRef(null);
-  const prevButtonRef = useRef(null);
-
   return (
     <section className="md:text-center xl:text-left relative">
       <h1 className="text-[40px] leading-[56px] font-thin text-white uppercase tracking-tighter md:text-[67px] md:mb-[72px] xl:leading-tight xl:text-[98px]">
@@ -35,30 +32,29 @@ const Gallery = () => {
       </h1>
       {windowWidth >= 768 ? (
         <Swiper
+          effect={"coverflow"}
+          grabCursor={true}
+          centeredSlides={true}
           slidesPerView={3}
-          spaceBetween={0}
-          loop={true}
+          slidesPerGroup={1}
+          coverflowEffect={{
+            rotate: 0,
+            depth: 100,
+            slideShadows: false,
+            scale: 0.5,
+            stretch: 5,
+          }}
           pagination={{
             clickable: false,
             el: ".pagination-el",
           }}
+          loop={true}
+          modules={[EffectCoverflow, Pagination, Navigation]}
           navigation={{
-            nextEl: nextButtonRef.current,
-            prevEl: prevButtonRef.current,
+            nextEl: ".nextBtn",
+            prevEl: ".prevBtn",
           }}
-          modules={[Pagination, Navigation, EffectCoverflow]}
-          effect={"coverflow"}
-          coverflowEffect={{
-            rotate: 0,
-            stretch: 80,
-            depth: -200,
-            modifier: 1,
-            slideShadows: false,
-            scale: 0.25,
-          }}
-          centeredSlides={true}
-          grabCursor={true}
-          className="coverflow, mySwiper"
+          className="mySwiper"
           style={{
             display: "flex",
             justifyContent: "space-between",
@@ -85,6 +81,51 @@ const Gallery = () => {
           <SwiperSlide
             style={{
               width: windowWidth >= 1280 ? "606px" : "415px",
+              height: "100%",
+            }}
+          >
+            <Image
+              src="/gallery-lake.jpg"
+              alt="Lake in mountains"
+              style={{ width: windowWidth >= 1280 ? "606px" : "415px" }}
+              width={606}
+              height={429}
+              priority
+            ></Image>
+          </SwiperSlide>
+          <SwiperSlide
+            style={{
+              width: windowWidth >= 1280 ? "606px" : "415px",
+              height: "100%",
+            }}
+          >
+            <Image
+              src="/gallery-forest.jpg"
+              alt="Forest in mountains"
+              style={{ width: windowWidth >= 1280 ? "606px" : "415px" }}
+              width={606}
+              height={429}
+              priority
+            ></Image>
+          </SwiperSlide>
+          <SwiperSlide
+            style={{
+              width: windowWidth >= 1280 ? "429px" : "294px",
+              height: "100%",
+            }}
+          >
+            <Image
+              src="/gallery-mountain.jpg"
+              alt="Mountain"
+              style={{ width: windowWidth >= 1280 ? "606px" : "415px" }}
+              width={606}
+              height={429}
+              priority
+            ></Image>
+          </SwiperSlide>
+          <SwiperSlide
+            style={{
+              width: windowWidth >= 1280 ? "429px" : "294px",
               height: "100%",
             }}
           >
@@ -148,17 +189,11 @@ const Gallery = () => {
         </ul>
       )}
       {windowWidth >= 768 && (
-        <div className="flex gap-[449px] w-full justify-center h-100% absolute bottom-0 z-10">
-          <button
-            ref={prevButtonRef}
-            className="text-[33px] leading-[56px] font-thin text-white uppercase tracking-tighter"
-          >
+        <div className="flex gap-[449px] w-full justify-center h-100% absolute bottom-0 z-10 xl:gap-[651px]">
+          <button className="prevBtn text-[33px] leading-[56px] font-thin text-white uppercase tracking-tighter">
             Back
           </button>
-          <button
-            ref={nextButtonRef}
-            className="text-[33px] leading-[56px] font-thin text-white uppercase tracking-normal"
-          >
+          <button className="nextBtn text-[33px] leading-[56px] font-thin text-white uppercase tracking-normal">
             Next
           </button>
         </div>

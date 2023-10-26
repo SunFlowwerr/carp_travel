@@ -66,7 +66,7 @@ const Header = () => {
                   smooth={true}
                   duration={500}
                   onClick={closeNavbarModal}
-                  className="text-[18px] text-white hover:underline focus:underline cursor-pointer"
+                  className="hover:transition-all focus:transition-all text-[18px] text-white hover:underline focus:underline cursor-pointer"
                 >
                   About
                 </Link>
@@ -77,7 +77,7 @@ const Header = () => {
                   smooth={true}
                   duration={500}
                   onClick={closeNavbarModal}
-                  className="text-[18px] text-white hover:underline focus:underline cursor-pointer"
+                  className="hover:transition-all focus:transition-all text-[18px] text-white hover:underline focus:underline cursor-pointer"
                 >
                   Services
                 </Link>
@@ -88,7 +88,7 @@ const Header = () => {
                   smooth={true}
                   duration={500}
                   onClick={closeNavbarModal}
-                  className="text-[18px] text-white hover:underline focus:underline cursor-pointer"
+                  className="hover:transition-all focus:transition-all text-[18px] text-white hover:underline focus:underline cursor-pointer"
                 >
                   Career
                 </Link>
@@ -99,7 +99,7 @@ const Header = () => {
                   smooth={true}
                   duration={500}
                   onClick={closeNavbarModal}
-                  className="text-[18px] text-white hover:underline focus:underline cursor-pointer"
+                  className="hover:transition-all focus:transition-all text-[18px] text-white hover:underline focus:underline cursor-pointer"
                 >
                   Gallery
                 </Link>
@@ -110,7 +110,7 @@ const Header = () => {
                   smooth={true}
                   duration={500}
                   onClick={closeNavbarModal}
-                  className="text-[18px] text-white hover:underline focus:underline cursor-pointer"
+                  className="hover:transition-all focus:transition-all text-[18px] text-white hover:underline focus:underline cursor-pointer"
                 >
                   Contacts
                 </Link>

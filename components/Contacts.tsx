@@ -69,14 +69,14 @@ const Contacts = () => {
             <div className="flex flex-col">
               <Link
                 href="tel:+380981234567"
-                className="hover:underline focus:underline"
+                className="hover:transition-all focus:transition-all hover:underline focus:underline"
               >
                 +38 (098) 12 34 567
               </Link>
 
               <Link
                 href="tel:+380731234567"
-                className="hover:underline focus:underline"
+                className="hover:transition-all focus:transition-all hover:underline focus:underline"
               >
                 +38 (073) 12 34 567
               </Link>
@@ -86,7 +86,7 @@ const Contacts = () => {
           <div className="mt-[24px] text-[14px] md:text-[16px] xl:text-[18px] text-white flex flex-row items-center gap-[19px] ml-[16px] md:ml-[34px] xl:mt-[64px] xl:ml-0">
             <Link
               href="mailto:support@carptravel.com"
-              className="hover:underline focus:underline"
+              className="hover:transition-all focus:transition-all hover:underline focus:underline"
             >
               support@carptravel.com
             </Link>
@@ -95,16 +95,16 @@ const Contacts = () => {
           <div className="mt-[24px] text-[14px] md:text-[16px] xl:text-[18px] text-white flex flex-row gap-[20px] items-top ml-[16px] justify-end mr-[15px] md:absolute md:top-[95px] md:left-[412px] md:mt-0 xl:static xl:mt-[124px] xl:mr-0 xl:flex-row-reverse xl:justify-end xl:ml-[130px]">
             <p className="font-extralight flex text-[12px]">Follow us</p>
             <ul>
-              <li className=" hover:underline focus:underline cursor-pointer">
+              <li className="hover:transition-all focus:transition-all hover:underline focus:underline cursor-pointer">
                 facebook
               </li>
-              <li className=" hover:underline focus:underline cursor-pointer">
+              <li className="hover:transition-all focus:transition-all hover:underline focus:underline cursor-pointer">
                 instagram
               </li>
-              <li className=" hover:underline focus:underline cursor-pointer">
+              <li className="hover:transition-all focus:transition-all hover:underline focus:underline cursor-pointer">
                 youtube
               </li>
-              <li className=" hover:underline focus:underline cursor-pointer">
+              <li className="hover:transition-all focus:transition-all hover:underline focus:underline cursor-pointer">
                 tiktok
               </li>
             </ul>
@@ -125,7 +125,7 @@ const Contacts = () => {
                     message: "Incorrect name",
                   },
                 })}
-                className="bg-white bg-opacity-5 text-white text-[13px] xl:text-[20px] hover:bg-opacity-10 focus:bg-opacity-10 h-[24px] pl-[8px] pr-[8px] outline-none xl:h-[28px]"
+                className="hover:transition-all focus:transition-all bg-white bg-opacity-5 text-white text-[13px] xl:text-[20px] hover:bg-opacity-10 focus:bg-opacity-10 h-[24px] pl-[8px] pr-[8px] outline-none xl:h-[28px]"
                 placeholder="John Smith"
                 pattern="/^[A-Za-z]+$/i"
                 onChange={onChangeName}
@@ -157,7 +157,7 @@ const Contacts = () => {
                   },
                 })}
                 pattern="/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/"
-                className="bg-white bg-opacity-5 text-white text-[13px] xl:text-[20px] hover:bg-opacity-10 focus:bg-opacity-10 h-[24px] pl-[8px] pr-[8px] outline-none xl:h-[28px]"
+                className="hover:transition-all focus:transition-all bg-white bg-opacity-5 text-white text-[13px] xl:text-[20px] hover:bg-opacity-10 focus:bg-opacity-10 h-[24px] pl-[8px] pr-[8px] outline-none xl:h-[28px]"
                 placeholder="johnsmith@email.com"
                 onChange={onChangeEmail}
               />
@@ -178,9 +178,9 @@ const Contacts = () => {
           <div className="flex flex-col w-full md:ml-[20px] xl:ml-0">
             <label className="flex flex-col gap-[4px] text-[12px] text-white font-extralight tracking-[3px]">
               Message
-              <textarea className="bg-white bg-opacity-5 h-[193px] xl:text-[20px] w-full xl:h-[174px] hover:bg-opacity-10 focus:bg-opacity-10 resize-none outline-none p-[8px]"></textarea>
+              <textarea className="hover:transition-all focus:transition-all bg-white bg-opacity-5 h-[193px] xl:text-[20px] w-full xl:h-[174px] hover:bg-opacity-10 focus:bg-opacity-10 resize-none outline-none p-[8px]"></textarea>
             </label>
-            <button className="text-[30px] font-medium text-white text-end uppercase mt-[16px] self-end xl:text-[32px]">
+            <button className="hover:transition-all focus:transition-all text-[30px] font-medium text-white text-end uppercase mt-[16px] self-end xl:text-[32px] hover:opacity-5 focus:opacity-5">
               Send
             </button>
           </div>

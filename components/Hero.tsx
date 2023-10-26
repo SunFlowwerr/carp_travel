@@ -38,7 +38,7 @@ const Hero = () => {
             spy={true}
             smooth={true}
             duration={500}
-            className="flex items-center justify-between w-[280px] h-[53px] mt-[28px] uppercase text-white font-bold cursor-pointer bg-white bg-opacity-5 hover:bg-opacity-10 focus:bg-opacity-10 md:w-[230px] md:h-[50px] text-[18px] xl:w-[293px] xl:h-[71px] xl:text-[32px]"
+            className="hover:transition-all focus:transition-all flex items-center justify-between w-[280px] h-[53px] mt-[28px] uppercase text-white font-bold cursor-pointer bg-white bg-opacity-5 hover:bg-opacity-10 focus:bg-opacity-10 md:w-[230px] md:h-[50px] text-[18px] xl:w-[293px] xl:h-[71px] xl:text-[32px]"
           >
             <Image
               src="/button_left.svg"
